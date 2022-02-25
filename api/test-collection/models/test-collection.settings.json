@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_collections",
+  "info": {
+    "name": "TestCollection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": false
+    },
+    "Enum": {
+      "type": "enumeration",
+      "enum": [
+        "Test",
+        "Test2",
+        "Test3"
+      ]
+    },
+    "Test": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "MetaData": {
+      "type": "json"
+    },
+    "version_device_types": {
+      "collection": "version-device-type"
+    },
+    "SingleVideo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "video.video-component"
+    },
+    "RepeatVideo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.video-component"
+    },
+    "DynamicZone": {
+      "type": "dynamiczone",
+      "components": [
+        "video.test",
+        "video.video-component"
+      ]
+    }
+  }
+}

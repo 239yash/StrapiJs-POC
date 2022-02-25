@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_device_types",
+  "info": {
+    "name": "Version-DeviceType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Version": {
+      "type": "decimal"
+    },
+    "DeviceType": {
+      "type": "string"
+    },
+    "home_page": {
+      "via": "version_device_types",
+      "model": "home-page"
+    }
+  }
+}

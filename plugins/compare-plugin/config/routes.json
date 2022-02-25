@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "compare-plugin.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_video_tests",
+  "info": {
+    "name": "Test",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "Component": {
+      "type": "string"
+    }
+  }
+}

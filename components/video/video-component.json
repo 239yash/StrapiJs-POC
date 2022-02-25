@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_video_video_components",
+  "info": {
+    "name": "VideoComponent",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "VideoUrl": {
+      "type": "string"
+    },
+    "VideoCaption": {
+      "type": "string"
+    }
+  }
+}
